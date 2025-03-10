@@ -2,15 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotional Support Hub - Coming Soon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <title>Emotional Support Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4a90e2;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1506956191722-e514a28596e6') no-repeat center center/cover;
+            height: 500px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content {
+            padding: 40px 20px;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-purple-400 to-blue-500 text-white h-screen flex items-center justify-center">
-    <div class="text-center p-6 rounded-xl shadow-lg bg-white bg-opacity-10 backdrop-blur-sm">
-        <h1 class="text-4xl font-bold mb-4">Emotional Support Hub</h1>
-        <p class="text-xl mb-6">We are working hard to launch our website. Stay tuned!</p>
-        <p class="text-sm">Contact us: <a href="mailto:mail@emotionalsupporthub.com" class="underline">mail@emotionalsupporthub.com</a></p>
-    </div>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Emotional Support Hub</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Emotional Support Hub</h1>
+            <p>Your trusted space for emotional wellness and guidance.</p>
+        </div>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>We are dedicated to offering emotional support, guidance, and resources to help you navigate life's challenges. Our mission is to provide a safe space where you can connect, learn, and grow. Whether you're feeling overwhelmed, anxious, or just need someone to talk to, we're here to help.</p>
+    </section>
+
+    <section id="services" class="content">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Online Counseling Sessions</li>
+            <li>Support Groups & Forums</li>
+            <li>Personalized Emotional Wellness Resources</li>
+            <li>Self-Help Tools & Guidance</li>
+        </ul>
+    </section>
+
+    <section id="resources" class="content">
+        <h2>Resources</h2>
+        <p>Explore our collection of articles, blogs, and videos designed to support your emotional wellness journey. Find insights on mental health, personal growth, and self-care.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emotional Support Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript functionality will go here
+    </script>
 </body>
 </html>
