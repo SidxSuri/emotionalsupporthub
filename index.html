@@ -6,7 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+  /* Mobile View Adjustments */
+  @media screen and (max-width: 768px) {
+    .aboutus-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutus-container > div {
+      width: 100%;
+      text-align: center;
+    }
+    .aboutus-container img {
+      margin-bottom: 20px;
+    }
+  }
 
+  /* Web View Adjustment */
+  .aboutus-container {
+    gap: 20px; /* Reduced the gap for better alignment */
+  }
+</style>
 </head>
 <body id="top"> 
 <div class="wrapper row1">
@@ -219,10 +239,10 @@
     </div>
     
     <!-- Main Container for Image & My Journey -->
-    <div style="display: flex; align-items: flex-start; gap: 40px; margin-top: 30px; background-color: #3E5968; padding: 30px; border-radius: 10px;">
+    <div class="aboutus-container" style="display: flex; align-items: flex-start; margin-top: 30px; background-color: #3E5968; padding: 30px; border-radius: 10px;">
       
       <!-- Your Picture (Left Side) -->
-      <div style="flex: 0.4; text-align: center;">
+      <div style="flex: 0.4;">
         <img src="images/sid.jpg" alt="Sid Suri" style="width: 280px; height: 280px;">
       </div>
       
